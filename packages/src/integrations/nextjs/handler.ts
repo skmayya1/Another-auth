@@ -1,15 +1,10 @@
 import { AuthConfig } from "../../types/Config";
 
 
-export async function handler(a: AuthConfig) {}
+export async function handler(config: AuthConfig) {
+    console.log(config);
+  
+}
 
-export const auth: AuthConfig = {
-  Providers: {
-    github: {
-      clientId: "GITHUB_CLIENT_ID",
-      clientSecret: "GITHUB_CLIENT_SECRET",
-    }
-  }
-};
 
 

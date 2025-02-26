@@ -13,3 +13,11 @@ export interface OAuthProvider {
   clientSecret: string;
   scope?: string;
 }
+
+export interface AnotherAuth {
+  handler: ({ }:AuthConfig) => void;
+  signin: () => void;
+  signout: () => void;  
+  auth: () => void;
+}
+
